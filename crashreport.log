@@ -1,0 +1,70 @@
+== application crashed
+app name: Pokemon BS
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Jun 23 2018
+build type: release
+build revision: 0 (devel)
+crash date: Sep 26 2018 20:26:15
+exception: Access violation (0xc0000005)
+exception address: 0x12cb2fe7
+  backtrace:
+
+== application crashed
+app name: Pokemon BS
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Jun 23 2018
+build type: release
+build revision: 0 (devel)
+crash date: Jan 31 2019 16:36:00
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424ac7
+  backtrace:
+    0: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000424AC7]
+    1: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000424C63]
+    2: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000043842A]
+    3: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000042ECFA]
+    4: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000044B44D]
+    5: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F3BC]
+    6: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F24F]
+    7: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F421]
+    8: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F24F]
+    9: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F421]
+    10: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000049E534]
+    11: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000479EEE]
+    12: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe(wglewIsSupported+0x123565) [0x000000000074BF55]
+    13: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000401250]
+    14: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x00000000004012D5]
+    15: C:\Windows\SysWOW64\ntdll.dll(RtlInitializeExceptionChain+0x63) [0x0000000076FA9ED2]
+    16: C:\Windows\SysWOW64\ntdll.dll(RtlInitializeExceptionChain+0x36) [0x0000000076FA9EA5]
+
+== application crashed
+app name: Pokemon BS
+app version: 0.6.6
+build compiler: gcc 4.8.1
+build date: Jun 23 2018
+build type: release
+build revision: 0 (devel)
+crash date: Jan 31 2019 17:11:28
+exception: Integer divide by zero (0xc0000094)
+exception address: 0x00424ac7
+  backtrace:
+    0: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000424AC7]
+    1: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000424C63]
+    2: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000043842A]
+    3: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000042ECFA]
+    4: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000044B44D]
+    5: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F3BC]
+    6: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F24F]
+    7: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F421]
+    8: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F24F]
+    9: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000046F421]
+    10: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x000000000049E534]
+    11: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000479EEE]
+    12: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe(wglewIsSupported+0x123565) [0x000000000074BF55]
+    13: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x0000000000401250]
+    14: C:\Users\Mixlort\Desktop\Client Pokemon Numb OTC 1.0\Pokemon Numb_OPGL.exe [0x00000000004012D5]
+    15: C:\Windows\SysWOW64\ntdll.dll(RtlInitializeExceptionChain+0x63) [0x0000000076FA9ED2]
+    16: C:\Windows\SysWOW64\ntdll.dll(RtlInitializeExceptionChain+0x36) [0x0000000076FA9EA5]
+
