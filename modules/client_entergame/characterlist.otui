@@ -1,0 +1,114 @@
+CharacterWidget < UIWidget
+  height: 25
+  background-color: alpha
+  &updateOnStates: |
+    function(self)
+      local children = self:getChildren()
+      for i=1,#children do
+        children[i]:setOn(self:isFocused())
+      end
+    end
+  @onFocusChange: self:updateOnStates()
+  @onSetup: self:updateOnStates()
+
+  $focus:
+    background-color: #8B4513
+
+  Label
+    id: name
+    color: white
+    anchors.top: parent.top
+    anchors.left:  parent.left
+    font: verdana-11px-monochrome
+    text-auto-resize: true
+    background-color: alpha
+    text-offset: 2 0
+
+    $on:
+      color: white
+
+  Label
+    id: worldName
+    color: white
+    color: white
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-right: 5
+    font: verdana-11px-monochrome
+    text-auto-resize: true
+    background-color: alpha
+    &baseText: '(%s)'
+
+    $on:
+      color: white
+
+MainWindow
+  id: charactersWindow
+  size: 517 462
+  margin-top: 70
+  margin-right: 30
+  image-source: character2.png
+  image-border: 0
+  visible: false
+  @onEnter: CharacterList.doLogin()
+  @onEscape: CharacterList.hide(true)
+  @onSetup: |
+    g_keyboard.bindKeyPress('Up', function() self:getChildById('characters'):focusPreviousChild(KeyboardFocusReason) end, self)
+    g_keyboard.bindKeyPress('Down', function() self:getChildById('characters'):focusNextChild(KeyboardFocusReason) end, self)
+  TextList
+    size: 250 210
+    id: characters
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-bottom: 190
+    margin-left: 170
+    margin-top: 50
+    background-color: #8e0132
+    padding: 
+    focusable: true
+    vertical-scrollbar: characterListScrollBar
+    auto-focus: first
+
+  VerticalScrollBar
+    id: characterListScrollBar
+    anchors.top: parent.top
+    margin-top: 2500
+    anchors.bottom: characters.bottom
+    anchors.right: characters.left
+    step: 14
+    pixels-scroll: true
+
+  Label
+    id: accountStatusLabel
+    color: yellow
+    !text: tr('Free Account')
+    anchors.left: characters.right
+    anchors.bottom: parent.bottom
+    margin-left: -342
+    margin-bottom: 40
+    text-auto-resize: true
+
+    $on:
+      color: #25e707
+
+
+  //CheckBox
+  //  id: charAutoLoginBox
+  //  !text: tr('Auto login')
+  //  !tooltip: tr('Auto login selected character on next charlist load')
+  //  anchors.left: parent.left
+  //  anchors.right: outfitCreatureBox.left
+  //  anchors.bottom: next.top
+  //  margin-bottom: 6
+  //  margin-left: 18
+  //  margin-right: 18
+  Label
+    id: namelabel
+    text: Name: Character name
+    color: white
+    anchors.left: characters.right
+    anchors.top: outfitCreatureBox.top
+    margin-top: 800
+    margin-left: 500
+    text-auto-resize: false

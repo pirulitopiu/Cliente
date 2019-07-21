@@ -1,0 +1,31 @@
+IconPoke < Button
+  width: 33
+  height: 33
+  image-size: 33 33
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+
+HealthBar < ProgressBar
+  id: healthBar
+  background-color: #ea2e47
+  anchors.top: parent.top
+  anchors.left: parent.left
+  anchors.right: parent.right
+  margin: 1  
+  
+Poke < UIProgressRect
+  background: #585858AA
+  percent: 100
+  focusable: false
+  font: verdana-11px-rounded
+  color: #FFFFFF
+  
+UIWindow
+  id: optionsWindow
+  size: 45 235
+  focusable: false
+  &save: true
+  image-source: /images/ui/Hedlets.png

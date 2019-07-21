@@ -1,0 +1,205 @@
+Butom < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:-10
+  margin-top:155
+  image-source: /images/icons/task
+  @onClick: Butom()
+  !tooltip: tr('task - use esse comando para ver as task que podem ser feitas')
+
+Buton < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:30
+  margin-top:115
+  image-source: /images/icons/Speed
+  @onClick: Buton()
+  !tooltip: tr('Speed - use esse comando para dar mais velocidade ao seu personagem')
+
+Btton < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:30
+  margin-top:155
+  image-source: /images/icons/Mais
+  @onClick: Btton()
+  !tooltip: tr('Comandos - use esse comando para ver uma lista de comandos')
+
+Buttona < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:30
+  margin-top:75
+  image-source: /images/icons/Rank
+  @onClick: Buttona()
+  !tooltip: tr('Rank Level - use esse comando para ver o rank atual')
+  
+Buttona2 < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:-10
+  margin-top:115
+  image-source: /images/icons/Carinho
+  @onClick: Buttona2()
+  !tooltip: tr('Love - use esse comando e para dar carinho para seu pokemon')
+
+flyUp < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-top:-5
+  margin-left:-10
+  image-source: /images/icons/Subir
+  @onClick: flyUp()
+  !tooltip: tr('Subir - use esse comando quando estiver usando Fly')
+
+teste < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:30
+  margin-top:35
+  image-source: /images/icons/Abandonar
+  @onClick: teste()
+  !tooltip: tr('Abandonar casa - use esse comando na frente da porta de sua casa')  
+
+tcButton < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:-10
+  margin-top:75
+  image-source: /images/icons/cure
+  @onClick: tc()
+  !tooltip: tr('Cure - use esse comando quando estive perto da nursey joy')
+  
+flyDown < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:30
+  margin-top:-5
+  image-source: /images/icons/Descer
+  @onClick: flyDown()
+  !tooltip: tr('Descer - use esse comando quando estiver usando Fly')
+  
+cdButton < UIButton
+  width: 32
+  height: 32
+  image-size: 32 32
+  image-clip: 0 0 0 0
+  image-color: white
+  focusable: false
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left:-10
+  margin-top:35
+  image-source: /images/icons/Comprar
+  @onClick: cd()
+  !tooltip: tr('Comprar uma casa - use esse comando na frente de uma porta de casa')
+  
+new < Button
+  !text: tr('Online')
+  width: 50
+  height: 20
+  focusable: false
+  anchors.top: pokePortrait.bottom
+  anchors.left: parent.left
+  anchors.centerIn: parent
+  margin-top: 70
+  margin-left: -1
+  @onClick: cd()
+  !tooltip: tr('')  
+  
+  
+MainWindow
+  !text: tr('Comandos')
+  id: tms
+  size: 85 250
+  draggable: true
+  margin-top: 100
+  focusable: false
+  &save: true
+  image: /images/icons/post
+  opacity: 0.70
+  @onEscape: self:hide()
+  
+  tcButton
+    id:tcButton
+  
+  flyUp
+    id:flyUp
+
+  teste
+    id:teste
+
+  Buttona
+    id:Buttona
+
+  Btton
+    id:Btton
+
+  Buton
+    id:Buton
+
+  Butom
+    id:Butom	
+
+  Buttona2
+    id:Buttona2
+  
+  flyDown
+    id:flyDown
+  
+  cdButton
+    id:cdButton	

@@ -1,0 +1,107 @@
+EnterGameWindow < MainWindow
+  size: 507 485
+  image-source: img/menulogin1
+  margin-top: 70
+  margin-right: 30
+
+  
+EnterGameTextEdit < UITextEdit
+  font: terminus-10px
+  color: #8B4513
+  size: 332 29
+  text-offset: 5 8
+  opacity: 1
+  padding-top: 7
+  padding-left: 10
+  padding-right: 50
+  image-source: img/account1
+  image-border:2
+  selection-color: 	#8B4513
+  selection-background-color: #cccccc
+  text-hidden: true
+  $disabled:
+    color: #8B4513
+    opacity: 1.5
+
+EnterGameCheckBox < UICheckBox
+  size: 28 28
+  image-rect: 0 0 15 15
+  image-source: img/checkbox
+
+  $hover !disabled:
+    color: #060606
+
+  $!checked:
+    image-clip: 0 0 28 28
+
+  $hover !checked:
+    image-clip: 0 28 28 28
+
+  $checked:
+    image-clip: 0 56 28 28
+
+  $hover checked:
+    image-clip: 0 112 28 28
+
+  $disabled:
+    image-color: #dfdfdf88
+    color: #dfdfdf88
+    opacity: 0.8
+
+EnterGameButton < UIButton
+  @onClick: EnterGame.doLogin()
+  size: 140 58
+  image-source: img/play  
+  image-clip: 0 0 140 58
+
+  $hover !disabled:
+    image-clip: 0 58 140 58
+
+  $pressed:
+    image-clip: 0 116 140 58
+  
+EnterGameWindow
+  id: enterGame
+  @onEnter: EnterGame.doLogin()
+  
+  EnterGameTextEdit
+    id: accountNameTextEdit
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 98
+    margin-left: 58
+
+  EnterGameTextEdit
+    id: accountPasswordTextEdit
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 173
+    margin-left: 56
+
+  CheckBox
+    id: rememberPasswordBox
+    !text: tr('')
+    !tooltip: tr('Remember account and password when starts client')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 132
+    margin-left: 313
+    @onCheckChange: self:getParent():getChildById('autoLoginBox'):setEnabled(self:isChecked())
+
+  CheckBox
+    id: autoLoginBox
+    enabled: false
+    !text: tr('')
+    !tooltip: tr('Open charlist automatically when starting client')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    margin-left: 313
+
+  EnterGameButton
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 323
+    margin-left: 153
